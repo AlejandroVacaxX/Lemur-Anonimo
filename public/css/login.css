@@ -22,10 +22,11 @@ html {
 
 body {
     min-height: 100vh;
-    background-image: url(/img/space.jpg);
+    background-image: url(/img/logo_space.png);
     background-size:contain;
     background-position: right;
     overflow: hidden;
+    background-repeat: no-repeat;
 }
 
 .wrapper {
