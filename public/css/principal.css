@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 2px solid #ccc;
+    background: #fff;
+}
+
+.izquierda, .centro, .derecha {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.user-img {
+    width: 200px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*-----------------------------------------------*/
+/* BANNER CLASE */
+.imagen_perfil {
+    width: 90%;
+    height: 300px;
+    margin: 40px auto;
+    border-radius: 30px;
+    background-image: url(/img/wallpaper.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#img-clase{
+    width: 500px;
+    height: 300px;
+    background-image: url(/img/wallpaper.png);
+    display: flex;
+    justify-content: center;
+    
+}
+
+#titulo_de_clase {
+    font-size: 48px;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.contenido,.a-clase{
+    color: white;
+}
+.materia{
+    font-size: 50px;
+}
+
+/*-----------------------------------------------*/
+/* CONTENIDO */
+.cajon-aviso-tareas {
+    max-width: 1800px;
+    max-width: 1800px;
+    min-width: none;
+    width: 100%;
+    
+    justify-content: center;
+    margin: auto;
+    display:flex;
+    flex-direction:row;
+    gap: 40px;
+}
+
+.tarea, .aviso {
+    display: block;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #f2f2f2;
+    border: 2px solid #ccc;
+    width: 1000px;
+    height: 500px;
+    justify-content: center;
+}
+
+.hora-fecha {
+    font-size: 14px;
+    color: gray;
+}
+
+.texto-aviso {
+    margin-top: 10px;
+}
+
+.reaccion {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.reaccion button {
+    background: #e6e6e6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.reaccion button:hover {
+    background: #d6d6d6;
+}
