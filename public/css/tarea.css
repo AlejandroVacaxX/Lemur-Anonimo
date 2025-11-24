@@ -1,0 +1,246 @@
+* {
+    padding: 0%;
+    gap: inherit;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: rgb(196, 48, 212);
+    font-family: "Outfit", sans-serif;
+
+
+
+}
+
+/*----------------Header-----------------*/
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 2px solid #ffffff;
+    background: #fff;
+    position: sticky;
+}
+
+.izquierda,
+.centro,
+.derecha {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: clamp(0.3rem, 1.2vw, 1.0rem);
+}
+
+
+.header-img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.user-img {
+    width: 100px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*-----------------------------------------------*/
+/* BANNER CLASE */
+.imagen_perfil {
+    width: 90%;
+    height: 300px;
+    margin: 40px auto;
+    border-radius: 30px;
+    background-image: url(/img/wallpaper.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-clase {
+    width: 500px;
+    height: 300px;
+    background-image: url(/img/wallpaper.png);
+    display: flex;
+    justify-content: center;
+
+}
+
+#titulo_de_clase {
+    font-size: 48px;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.contenido,
+.a-clase {
+    color: white;
+}
+
+.materia {
+    font-size: 50px;
+}
+
+a {
+    color: black;
+    background-color: transparent;
+
+}
+
+.container {
+    height: 100vh;
+    max-width: 2400px;
+    min-width: 300px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.asignacionTask {
+    width: 70%;
+
+    height: 100%;
+
+    background-color: #ffffff;
+
+    padding: 2rem;
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.subirTarea {
+    width: 30%;
+    /* Ocupa el 30% del ancho del padre (.container) */
+    height: 100%;
+    /* Ocupa todo el alto disponible */
+    background-color: transparent;
+    /* Azul oscuro elegante */
+    padding: 2rem;
+
+    /* FLEXBOX PARA CENTRAR LOS BOTONES: */
+    display: flex;
+    flex-direction: column;
+    /* Apila los botones verticalmente */
+    justify-content: center;
+    /* Centra el grupo de botones verticalmente */
+    align-items: center;
+    /* Centra el grupo de botones horizontalmente */
+    gap: 1.5rem;
+    /* Espacio entre los botones */
+   
+    
+
+}
+
+/*Botones*/
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 80%;
+    max-width: 300px;
+    height: 20em;
+    /* Limitar el ancho de los botones */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+
+    flex-direction: column;
+    box-shadow: 0 0 20px 0 rgb(131, 131, 131);
+}
+
+.comentarios {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.5rem;
+    font-weight: 600;
+
+
+    width: 80%;
+    max-width: 300px;
+    height: 20em;
+    /* Limitar el ancho de los botones */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 0 0 20px 0 rgb(131, 131, 131);
+}
+
+#subir {
+
+    background-color: #b516f9;
+    /* Naranja vibrante */
+    color: white;
+    border: none;
+    width: 100%;
+    height: 3em;
+    border-radius: 10px;
+}
+
+#subir:hover {
+    background-color: #9668d3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+#hecho {
+    background-color: #10b981;
+    border-radius: 10px;
+    /* Verde esmeralda */
+    color: white;
+    border: 2px solid #047857;
+    width: 100%;
+    height: 3em;
+}
+
+#hecho:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+#contenido {
+    width: 80%;
+    /* Ancho dentro del 70% */
+    height: 80%;
+    /* Alto dentro del 70% */
+    max-width: 1000px;
+    max-height: 800px;
+    background-color: transparent;
+    /* Color crema/amarillo claro */
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    flex-direction: column;
+
+
+}
