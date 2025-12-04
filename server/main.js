@@ -1,14 +1,17 @@
 //vamos a cargar el puerto
 import 'dotenv/config'
 import pg from "pg";
-import { login } from './loginController.js';
-import { register } from './loginController.js';
+import { login } from '../loginController.js';
+import { register } from '../loginController.js';
 const { Pool } = pg;
- 
 
-const PORT = process.env.PORT;
+
+const PORT = process.env.SERVER_PORT;
 import express from 'express'
+import cors from 'cors'
 const app = express();
+
+app.use(cors());
 
 
 
